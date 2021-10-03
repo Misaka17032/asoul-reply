@@ -28,10 +28,10 @@ sudo docker run --gpus '"device=0,1"' -it -v <path>:/CPM  --name=cpm  cpm:v0
 
 ## 使用
 
-下载好模型后放在项目根目录`models`文件夹中。
+下载好[模型](https://github.com/Misaka17032/asoul-reply/releases/tag/v1.0)后放在项目根目录`models`文件夹中。
 
 提供了命令行交互式生成：
 ```
 bash scripts/generate_text.sh
 ```
-运行该脚本需要两块GPU。
+运行该脚本需要两块GPU，运行时每张约占用1.5G显存。
